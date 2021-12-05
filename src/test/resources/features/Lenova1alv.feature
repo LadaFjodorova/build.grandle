@@ -2,12 +2,9 @@
 
   Feature: Order product functionality test
 
-
-    @Given
     Scenario: Order Lenovo Legion
       Given Open Homepage
-      And Write in search Lenovo
-      And Choose category Legion
+      And Write in search Lenovo Legion
       And Choose and open product
       When Remember the name and the price product
       And Put in the basket

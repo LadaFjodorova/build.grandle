@@ -1,11 +1,33 @@
 package finalProject.models;
 
+
 import lombok.Getter;
+import lombok.Setter;
 
 @Getter
+@Setter
+
 public class Product {
-    private final String productBrand = "Lenovo";
-    private final String productName = "Klēpjdators Lenovo Legion 5-15 82B500HGPB PL, AMD Ryzen™ 5-4600H, spēlēm, 8 GB, 15.6";
-    private final String productPrice = "825,00";
+
+    private final String productBrand = "Lenovo Legion";
+
+    String productName;
+    String productPrice;
+
+
+    public String getProductName() {
+        return productName;
+    }
+    public void setProductName(String productName){
+        this.productName = productName;
+    }
+
+    public String getProductPrice() {
+        return productPrice;
+    }
+    public void setProductPrice(String productPrice) {
+        this.productPrice = productPrice;
+    }
+
 
 }
