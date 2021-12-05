@@ -1,4 +1,4 @@
-package finalProject.Pages;
+package finalProject.pages;
 
 import finalProject.models.Product;
 import finalProject.models.UserData;

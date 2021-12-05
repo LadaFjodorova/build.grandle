@@ -5,7 +5,7 @@ import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import finalProject.hooks.Hooks;
-import finalProject.Pages.*;
+import finalProject.pages.*;
 
 public class HomePage {
     OrderLenovo orderLenovo = new OrderLenovo();

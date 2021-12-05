@@ -1,4 +1,4 @@
-package finalProject.Pages;
+package finalProject.pages;
 
 import finalProject.models.UserData;
 import org.openqa.selenium.By;
