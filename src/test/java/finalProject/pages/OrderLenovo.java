@@ -1,7 +1,6 @@
 package finalProject.pages;
 
-import finalProject.models.Product;
-import finalProject.models.UserData;
+import finalProject.models.*;
 import org.openqa.selenium.By;
 
 import static com.codeborne.selenide.Condition.text;
@@ -12,6 +11,7 @@ public class OrderLenovo {
 
     UserData userData = new UserData();
     Product product = new Product();
+
 
     private final By productPrice = By.cssSelector("span[class='price']");
     private final By productName = By.cssSelector("div[class='product-righter google-rich-snippet']");
@@ -43,6 +43,7 @@ public class OrderLenovo {
     public void compareCorrectlyChoiceProduct() {
         $(cartProductName).shouldHave(text(product.getProductName()));
         $(cartProductPrice).shouldHave(text(product.getProductPrice()));
+        System.out.println(product.getProductName());
         System.out.println(product.getProductPrice());
 
     }
@@ -65,6 +66,9 @@ public class OrderLenovo {
         System.out.println(product.getProductPrice());
         $("div[class='name']").shouldHave(text(userData.getFullName()));
         $("div[class='address']").shouldHave(text(userData.getPhoneNumber()));
+        System.out.println(userData.getFullName());
+        System.out.println(userData.getPhoneNumber());
+
 
     }
 
